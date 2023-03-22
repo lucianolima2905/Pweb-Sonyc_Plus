@@ -11,7 +11,9 @@ apt install wget -y; bash <(wget -qO- https://github.com/lucianolima2905/Pweb-So
 
 # 𓊈𒆜 CHAVE DE INSTALAÇÃO! 𒆜𓊉
 ```
-@helpvpn
+Chama no WhatSapp (74) 99939-3392
+Ou no Telegram @sonycltda
+
 ```
 
 # 𓊈𒆜 SINCRONIZAR NA VPS SSH! 𒆜𓊉
