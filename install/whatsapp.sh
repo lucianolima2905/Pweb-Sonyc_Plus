@@ -31,16 +31,16 @@ clear
 #
 clear
 whatsappatual=$(cut -d"'" -f2 /var/www/html/whatsapp)
-echo -e "\E[44;1;37m    NÚMERO DO WHATSAPP     \E[0m"
+echo -e "\E[44;1;37m    NOME DA LOGO     \E[0m"
 echo ""
-echo -e "\E[44;1;37m    Aqui você troca o número do whatsapp     \E[0m"
+echo -e "\E[44;1;37m    Aqui é definido o nome da logo     \E[0m"
 echo ""
-echo -e "                              \033[1;31mBy @sonycssh\033[1;36m"
+echo -e "                              \033[1;31mBy @smigolvip\033[1;36m"
 echo ""
 echo ""
 echo -e "\033[1;36m NOME ATUAL:\033[1;37m $whatsappatual\033[0m"
 echo ""
-echo -ne "\033[1;32m INFORME O NUMERO DO WHATSAPP (Ex: 11998547548)\033[1;37m: "; read -r whatsapp
+echo -ne "\033[1;32m INFORME O NUMERO DO WHATSAPP (Ex: 11xxxxxxxx)\033[1;37m: "; read -r whatsapp
 echo ""
 echo -e "   \033[1;32mOK\033[1;37m"
 echo ""
