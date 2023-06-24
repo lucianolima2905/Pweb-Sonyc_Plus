@@ -229,8 +229,8 @@ mysql -u root -p"$pwdroot" -e "FLUSH PRIVILEGES" > /dev/null 2>&1
 mysql -u root -p"$pwdroot" -e "DELETE FROM mysql.user WHERE User=''" > /dev/null 2>&1
 mysql -u root -p"$pwdroot" -e "DELETE FROM mysql.db WHERE Db='test' OR Db='test\_%'" > /dev/null 2>&1
 mysql -u root -p"$pwdroot" -e "FLUSH PRIVILEGES" > /dev/null 2>&1
-mysql -u root -p"$pwdroot" -e "CREATE DATABASE sshplus;" > /dev/null 2>&1
-mysql -u root -p"$pwdroot" -e "GRANT ALL PRIVILEGES ON sshplus.* To 'root'@'localhost' IDENTIFIED BY '$pwdroot';" > /dev/null 2>&1
+mysql -u root -p"$pwdroot" -e "CREATE DATABASE sonycserver;" > /dev/null 2>&1
+mysql -u root -p"$pwdroot" -e "GRANT ALL PRIVILEGES ON sonycserver.* To 'root'@'localhost' IDENTIFIED BY '$pwdroot';" > /dev/null 2>&1
 mysql -u root -p"$pwdroot" -e "FLUSH PRIVILEGES" > /dev/null 2>&1
 echo '[mysqld]
 max_connections = 1000' >> /etc/mysql/my.cnf
@@ -276,7 +276,7 @@ function inst_db {
 sed -i "s;dominio;$IP;g" /var/www/html/bdgestorssh.sql > /dev/null 2>&1
 sleep 1
 if [[ -e "/var/www/html/bdgestorssh.sql" ]]; then
-    mysql -h localhost -u root -p"$pwdroot" --default_character_set utf8 sshplus < /var/www/html/bdgestorssh.sql > /dev/null 2>&1
+    mysql -h localhost -u root -p"$pwdroot" --default_character_set utf8 sonycserver < /var/www/html/bdsonyc.sql > /dev/null 2>&1
     rm /var/www/html/bdgestorssh.sql > /dev/null 2>&1
 else
     clear
