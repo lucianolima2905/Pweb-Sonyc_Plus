@@ -11,7 +11,7 @@ apt install wget -y; bash <(wget -qO- https://github.com/lucianolima2905/Pweb-So
 
 # 𓊈𒆜 CHAVE DE INSTALAÇÃO! 𒆜𓊉
 ```
-Chama no WhatSapp (74) 99939-3392
+Chama no WhatSapp (74) 99944-5516
 Ou no Telegram @sonycltda
 
 ```
