@@ -126,12 +126,12 @@ fun_atpweb () {
 [[ ! -d /bin/ppweb ]] && mkdir /bin/ppweb
 cd /bin/ppweb || exit
 rm *.sh verpweb > /dev/null 2>&1
-wget https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/verifatt.sh > /dev/null 2>&1
-wget https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/verpweb > /dev/null 2>&1
+wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/verifatt.sh > /dev/null 2>&1
+wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/verpweb > /dev/null 2>&1
 chmod 777 *.sh > /dev/null 2>&1
 cd /bin || exit
 rm pweb > /dev/null 2>&1
-wget https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/pweb > /dev/null 2>&1
+wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/pweb > /dev/null 2>&1
 chmod 777 pweb > /dev/null 2>&1
 cd || exit 
 cat /dev/null > ~/.bash_history && history -c
@@ -197,7 +197,7 @@ fun_tst () {
     if [ -e "/usr/bin/testevelocidade" ]; then
     testevelocidade --share > speed
     else
-    wget https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/speedtest-cli -O testevelocidade
+    wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/speedtest-cli -O testevelocidade
     chmod +x testevelocidade
     mv testevelocidade /usr/bin/testevelocidade
     testevelocidade --share > speed
@@ -239,7 +239,7 @@ painel_att () {
 clear
 cd /bin/ppweb || exit
 rm verweb > /dev/null 2>&1
-wget https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/verweb > /dev/null 2>&1
+wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/verweb > /dev/null 2>&1
 cd || exit
 echo ""
 echo -e "           \033[1;33m● \033[1;32mATUALIZANDO LINUX, PODE DEMORAR \033[1;33m●\033[0m"
@@ -279,7 +279,7 @@ find /var/www/html/ -iname "*.jpg" -type f -exec rm -rfv {} \; > /dev/null 2>&1
 find /var/www/html/ -iname "*.png" -type f -exec rm -rfv {} \; > /dev/null 2>&1
 find /var/www/html/ -iname "*.png" -type f -exec rm -rfv {} \; > /dev/null 2>&1
 find /var/www/html/ -iname "*.lock" -type f -exec rm -rfv {} \; > /dev/null 2>&1
-wget https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/gestorssh.zip > /dev/null 2>&1
+wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/gestorssh.zip > /dev/null 2>&1
 sleep 2
 unzip -o gestorssh.zip > /dev/null 2>&1
 rm -rf gestorssh.zip index.html bdgestorssh.sql > /dev/null 2>&1
@@ -457,8 +457,8 @@ fun_att_api () {
   screen -r -S "bot_painel" -X quit > /dev/null 2>&1
   screen -wipe 1>/dev/null 2>/dev/null
 	sleep 2
-    wget -qO- https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/apibot -O /bin/ppweb/apibot > /dev/null 2>&1
-    wget -qO- https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/bot -O /bin/ppweb/bot > /dev/null 2>&1
+    wget -qO- https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/apibot -O /bin/ppweb/apibot > /dev/null 2>&1
+    wget -qO- https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/bot -O /bin/ppweb/bot > /dev/null 2>&1
 	chmod 777 -R /bin/ppweb > /dev/null 2>&1
   cd $HOME || exit
   echo ""
@@ -511,7 +511,7 @@ pararBot(){
 executarBot(){
   clear
 banner
-  chave=$(curl -sSL "https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/chave") &>/dev/null
+  chave=$(curl -sSL "https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/chave") &>/dev/null
   key=$(cat /bin/ppweb/botpag/chave_inst) &>/dev/null
     
          if [[ "$key" = "$chave" ]]
@@ -542,7 +542,7 @@ banner
 verificar_chave(){
 clear
 banner
-chave=$(curl -sSL "https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/chave") &>/dev/null
+chave=$(curl -sSL "https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/chave") &>/dev/null
   
   if [[ ! -f /bin/ppweb/botpag/chave_inst ]]
   then
@@ -585,7 +585,7 @@ prepararAmbiente(){
 
 rm /bin/ppweb/botpag/* &>/dev/null
 	
-wget https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/botpag.zip &>/dev/null
+wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/botpag.zip &>/dev/null
 
 unzip botpag.zip &>/dev/null
 
@@ -739,8 +739,8 @@ fun_botOnOff() {
         echo -e "\033[1;32mATIVANDO BOT PWEB \033[0m\n"
         fun_bot1() {
             [[ ! -e "/bin/ppweb/bot" ]] && {
-				wget -qO- https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/apibot -O /bin/ppweb/apibot > /dev/null 2>&1
-                wget -qO- https://github.com/JeanRocha91x/Pweb-Swit-T-Plus/raw/main/install/bot -O /bin/ppweb/bot > /dev/null 2>&1
+				wget -qO- https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/apibot -O /bin/ppweb/apibot > /dev/null 2>&1
+                wget -qO- https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/bot -O /bin/ppweb/bot > /dev/null 2>&1
 				chmod 777 -R /bin/ppweb > /dev/null 2>&1
 			}
           cd /bin/ppweb
