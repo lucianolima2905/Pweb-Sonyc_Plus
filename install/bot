@@ -1,5 +1,5 @@
 #!/bin/bash
-#[[ $(awk -F" " '{print $2}' /usr/lib/telegram) != "@Smigolvip" ]] && exit 0
+[[ $(awk -F" " '{print $2}' /usr/lib/telegram) != "@swittecnologia" ]] && exit 0
 source apibot
 api_bot=$1
 id_admin=$2
