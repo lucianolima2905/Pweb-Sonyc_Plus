@@ -12,7 +12,7 @@ apt install wget -y; bash <(wget -qO- https://github.com/lucianolima2905/Pweb-So
 
 # 𓊈𒆜 CHAVE DE INSTALAÇÃO! 𒆜𓊉
 ```
-@swittplus
+ENTRE EM CONTATO (74) 99944-5516  WhatSapp
 ```
 
 # 𓊈𒆜 SINCRONIZAR NA VPS SSH! 𒆜𓊉
@@ -65,10 +65,8 @@ em breve
 # 𓊈𒆜 CRÉDITOS: 𒆜𓊉
 ```
 @crazy_vpn
-@nandoslayer
-@swittecnologia
-@Davidsdy
+
 ```
 
-# 𓊈𒆜 VPN MONEY: 𒆜𓊉
-👉 https://kiwify.app/NKl55g5.
+# 𓊈𒆜 SONYC NET: 𒆜𓊉
+👉 .
