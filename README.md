@@ -1,4 +1,4 @@
-#  𓊈𒆜 PAINEL VIP SWIT-T-PLUS 𒆜𓊉
+#  𓊈𒆜 PAINEL VIP SONYC-PLUS 𒆜𓊉
 
 ⚠ <b>SISTEMA SUPORTADO:</b>
 </br>
